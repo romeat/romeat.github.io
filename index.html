@@ -3,6 +3,21 @@
 <body>
 
 <h1>My Page</h1>
+<p id="text"></p>
+<input id="generate" type="button" value="Сгенерировать">
+
+function init() {
+var b = function a() {
+var h = ["1", "2", "3", "4", "5", "6"];
+var k = Math.floor(Math.random() * h.length);
+var c = h[k];
+return c
+};
+document.getElementById("generate").onclick = function() {
+document.getElementById("text").innerHTML = b()
+}
+}
+window.onload = init;
 
 </body>
 </html>
