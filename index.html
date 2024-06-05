@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html>
+   <head>
+  <meta charset="utf-8">
+  <title>background-color</title>
+  <style>
+   body{
+    background-color: #3366CC;
+   }
+  </style>
+ </head>
+  <script>
+    function toggleFullScreen() {
+      if (!document.fullScreenElement) {
+        document.documentElement.requestFullscreen();
+      } else if (document.exitFullScreen) {
+        document.exitFullScreen();
+      }
+    }
+  </script>
 <body>
 
 <h1>Supported from:</h1>
@@ -10,5 +28,8 @@
 <h1><LatestVersion>0.6.6</LatestVersion></h1>
 <h1><LatestBuildCode>24</LatestBuildCode></h1>
 <h1><DownloadLink>https://github.com/romeat/smashup/releases/download/0.6.6/smashup-v0.6.6-release.apk</DownloadLink></h1>
+   <div>
+      <button onClick="toggleFullScreen()">Full Screen test</button>
+ </div>
 </body>
 </html>
